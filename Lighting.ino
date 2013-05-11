@@ -1,9 +1,9 @@
-void light1()  {
-  analogWrite(redPin, 0);
-  analogWrite(greenPin, 0);
+void light()  {
+  analogWrite(redPin, 255);
+  analogWrite(greenPin, 255);
   analogWrite(bluePin, 255);
   lcd.setCursor(12, 1);                            
-  lcd.write(byte(6));                                // Moon
+  lcd.write(byte(7));                                // Moon
   
 //analogWrite(greenPin, 255);
   
@@ -43,11 +43,3 @@ void light1()  {
  */
 }
 
-void light2()  {
-  analogWrite(redPin, 255);
-  analogWrite(greenPin, 255);
-  analogWrite(bluePin, 255);
-
-  lcd.setCursor(12, 1);
-  lcd.write(byte(5));                                // Sun
-}
